@@ -1,1 +1,23 @@
+body {
+  text-align: center;
+  background: #777;
+}
 
+.tittle {
+  color: #fff;
+}
+
+.form {
+  border-radius: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding-top: 10px;
+  width: 50px;
+  color: red;
+}
+
+.input {
+  background-color: blue;
+}
