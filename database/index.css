@@ -7,17 +7,28 @@ body {
   color: #fff;
 }
 
-.form {
-  border-radius: 10px;
-}
-
 .button {
   display: inline-block;
-  padding-top: 10px;
-  width: 50px;
-  color: red;
+  color: #fff;
+  font-weight: bold;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 10px 110px;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  min-width: 100px;
+  border: 1px solid #ccc;
 }
 
 .input {
-  background-color: blue;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  min-width: 100px;
+}
+
+p {
+  color: #ccc;
+  font-size: 17px;
 }
