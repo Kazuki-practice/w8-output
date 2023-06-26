@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   background: #777;
@@ -22,12 +26,14 @@ body {
   font-weight: bold;
   background-color: #3232ff;
   border-radius: 10px;
-  padding: 10px 110px;
-  margin-top: 50px;
+  padding: 12px 136px;
+  margin-top: 40px;
   text-align: center;
   text-decoration: none;
   min-width: 100px;
+  border: 1px solid #0000cc;
   box-shadow: 0 4px 0 #0000cc;
+  cursor: pointer;
 }
 
 .button:hover {
