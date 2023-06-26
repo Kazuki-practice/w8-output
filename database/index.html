@@ -7,24 +7,38 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="tittle">
-      <h1>Sign in to your account</h1>
+    <div class="title subject">
+      <h2>Sign in to your account</h2>
     </div>
-    <div class="tittle content">
-      <h3>Your email</h3>
-    </div>
-    <div class="form">
-      <input class="input" type="text" name="email" size="40" />
-    </div>
-    <div class="tittle content">
-      <h3>Password</h3>
+    <div class="title content">
+      <h4>Your email</h4>
     </div>
     <div class="form">
-      <input class="input" type="text" name="password" size="40" />
+      <input
+        class="input"
+        type="text"
+        name="email"
+        placeholder="name@company.com"
+        size="40"
+      />
+    </div>
+    <div class="title content">
+      <h4>Password</h4>
+    </div>
+    <div class="form">
+      <input
+        class="input"
+        type="password"
+        name="password"
+        placeholder="********"
+        pattern="[a-zA-Z0-9]+"
+        title="パスワードは半角英数字で入力してください。"
+        size="40"
+      />
     </div>
     <div class="form">
       <a href="#" class="button">Sign in</a>
     </div>
-    <p>Don't have an account yet? <a href="#">Sign up</a></p>
+    <p class="title">Don't have an account yet? <a href="#">Sign up</a></p>
   </body>
 </html>
