@@ -1,23 +1,40 @@
-// window.localStorage.setItem("email", num);
-// const email = window.localStorage.getItem("email");
+const emailInput = document.getElementsByName("email")[0];
+const passwordInput = document.getElementsByName("password")[0];
+const signInButton = document.querySelector(".button");
 
-// window.localStorage.setItem("password", num);
-// const password = window.localStorage.setItem("password");
+const lsEmailVal = localStorage.getItem("email");
+const lsPasswordVal = localStorage.getItem("password");
 
-document.addEventListener("DOMContentLoaded", function () {
-  const emailInput = document.querySelector(".input[name='email']");
-  const passwordInput = document.querySelector(".input[name='password']");
-  const signInButton = document.querySelector(".button");
+if (lsEmailVal) emailInput.value = lsEmailVal;
+if (lsPasswordVal) passwordInput.value = lsPasswordVal;
 
-  emailInput.value = localStorage.getItem("email") || "";
-  passwordInput.value = localStorage.getItem("password") || "";
+signInButton.addEventListener("click", function (e) {
+  e.preventDefault();
 
-  signInButton.addEventListener("click", function (e) {
-    e.preventDefault();
+  localStorage.setItem("email", emailInput.value);
+  localStorage.setItem("password", passwordInput.value);
 
-    localStorage.setItem("email", emailInput.value);
-    localStorage.setItem("password", passwordInput.value);
-
-    this.closest("form").submit();
-  });
+  this.closest("form").submit();
 });
+
+//DOM = $ = ex) $foo
+// //定数 = 大文字 + "_" = ex) SAMPLE_VALUE
+
+// const $emailInput = document.querySelector(".input[name='email']");
+// const $passwordInput = document.querySelector(".input[name='password']");
+// const $signInButton = document.querySelector(".button");
+
+// const lsEmailVal = localStorage.getItem("email");
+// const lsPasswordVal = localStorage.getItem("password");
+
+// if(lsEmailVal) $emailInput.value = lsEmailVal;
+// if(lsPasswordVal) $passwordInput.value = lsPasswordVal;
+
+// $signInButton.addEventListener("click", function (e) {
+//   e.preventDefault();
+
+//   localStorage.setItem("email", $emailInput.value);
+//   localStorage.setItem("password", $passwordInput.value);
+
+//   this.closest("form").submit();
+// });
